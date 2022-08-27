@@ -290,6 +290,56 @@ footer {
   font-weight: 200;
 }
 
+@media (max-width: 1200px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .header-right {
+    float: none;
+  }
+
+  .header {
+  background-color: #331818;
+}
+
+.header a {
+  color: rgb(88, 79, 24);
+}
+
+.header a:hover {
+  background-color: rgb(100, 20, 83);
+  color: rgb(255, 255, 255);
+}
+
+.header a.active {
+  background-color: rgb(128, 128, 128);
+  color: rgb(105, 105, 105);
+}
+
+footer {
+  background-color: #530606;
+  color: rgb(6, 80, 28);
+}
+
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  flex-basis: 24%;
+  padding: 1%;
+  margin: 0.5%;
+  background-color: rgb(245, 212, 169);
+}
+
+.gallery img{
+  width: 100%;
+}
+}
+
 @media (max-width: 800px) {
     .header a {
     float: none;
