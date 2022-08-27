@@ -33,21 +33,27 @@ a:hover {
   transition: 0.5s;
 }
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  display: inline-block;
-  width: 180px;
+.imgContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-div.gallery:hover {
-  border: 3px solid #777;
+.gallery {
+  flex-basis: 24%;
+  padding: 1%;
+  margin: 0.5%;
+  background-color: rgb(245, 212, 169);
+}
+
+.gallery:hover {
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(219, 143, 43);
 }
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 95%;
 }
 
 div.desc {
@@ -176,18 +182,6 @@ form button:hover {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .header-right {
-    float: none;
-  }
-}
-
 .floatButton {
   margin: 0;
   cursor: pointer;
@@ -294,4 +288,54 @@ footer {
   text-transform: uppercase;
   opacity: 4;
   font-weight: 200;
+}
+
+@media (max-width: 700px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .header-right {
+    float: none;
+  }
+
+  .header {
+  background-color: #b62020;
+}
+
+.header a {
+  color: rgb(202, 176, 30);
+}
+
+.header a:hover {
+  background-color: rgb(241, 33, 196);
+  color: rgb(255, 255, 255);
+}
+
+.header a.active {
+  background-color: rgb(128, 128, 128);
+  color: rgb(105, 105, 105);
+}
+
+footer {
+  background-color: #d10f0f;
+  color: rgb(23, 192, 73);
+}
+
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  flex-basis: 24%;
+  padding: 1%;
+  margin: 0.5%;
+  background-color: rgb(245, 212, 169);
+}
+
+.gallery img{
+  width: 100%;
+}
 }
