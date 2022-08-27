@@ -290,7 +290,7 @@ footer {
   font-weight: 200;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .header a {
     float: none;
     display: block;
@@ -310,6 +310,56 @@ footer {
 
 .header a:hover {
   background-color: rgb(241, 33, 196);
+  color: rgb(255, 255, 255);
+}
+
+.header a.active {
+  background-color: rgb(128, 128, 128);
+  color: rgb(105, 105, 105);
+}
+
+footer {
+  background-color: #d10f0f;
+  color: rgb(23, 192, 73);
+}
+
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  flex-basis: 24%;
+  padding: 1%;
+  margin: 0.5%;
+  background-color: rgb(245, 212, 169);
+}
+
+.gallery img{
+  width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .header-right {
+    float: none;
+  }
+
+  .header {
+  background-color: #bed117;
+}
+
+.header a {
+  color: rgb(44, 202, 30);
+}
+
+.header a:hover {
+  background-color: rgb(17, 233, 197);
   color: rgb(255, 255, 255);
 }
 
